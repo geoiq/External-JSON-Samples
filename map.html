@@ -1,0 +1,44 @@
+<html>
+<title>Sample Map</title>
+<style>#maker_map_47944 {width: 100%; height: 400px;}</style>
+<script type="text/javascript" charset="utf-8" src="http://geocommons.com/javascripts/f1.api.js"></script>
+<script src="http://geocommons.com/javascripts/jquery-1.3.2.min.js?1296763097" type="text/javascript"></script> 
+    <script type="text/javascript" charset="utf-8"> 
+      var jq = jQuery.noConflict();
+    </script> 
+
+<script type="text/javascript" charset="utf-8">
+  projects_map = new F1.Maker.Map({map_id: "47944", dom_id: "projects_map",onload:function(){styleMap();}});
+  function styleMap(){
+	  projects_map.addLayer({source: "url:http://localhost/wb_samples/external_json.json",styles: {type: "POINT", icon: {symbol:"http://farm5.static.flickr.com/4125/5219379732_e7251b5a47_o_d.png"}}});
+	  
+  }
+  
+  function filterPoints(){
+	 projects_map.addFilter(1, "$[name] == 'Brazil'");
+  }
+  function highlightPoints(){
+	  projects_map.addHighlight(1, "$[name] =='Brazil'");
+	  
+  }
+  function removeFilters(){
+	  projects_map.clearFilters(1);
+	 
+  }
+  function clearHighlights(){
+	  projects_map.clearHighlights(1);
+	  
+  }
+</script>
+
+<body>
+
+
+
+<div class="geocommons_map" id="projects_map"></div><br/>
+<a href="#" onclick="filterPoints()">Filter Me</a>
+<a href="#" onclick="highlightPoints()">Highlight Me</a>
+<a href="#" onclick="removeFilters()">Remove Filters</a>
+<a href="#" onclick="clearHighlights()">Remove Hightlights</a>
+</body>
+</html>

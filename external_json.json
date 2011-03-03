@@ -1,0 +1,18 @@
+{"name": "Projects",
+"data_attributes": [
+{"name": "name", "original_name": "name", "data_type": "string"}, 
+{"name": "Sector Name", "original_name": "Sector Name", "data_type": "string"}, 
+{"name": "Cross Cutting Theme", "original_name": "Cross Cutting Theme", "data_type": "string"}, 
+{"name": "Knowledge Providing Country", "original_name": "Knowledge Providing Country", "data_type": "string"}, 
+{"name": "Knowledge Receiving Country", "original_name": "Knowledge Receiving Country", "data_type": "string"},
+{"name": "Fund Source", "original_name": "Fund Source", "data_type": "string"},
+{"name": "Fund Opening Date", "original_name": "Fund Opening Date", "data_type": "string"},
+{"name": "Fund Closing Date", "original_name": "Fund Closing Date", "data_type": "string"}],
+"features": [
+{"name": "Brazil", "style": null, "Sector Name": "Agriculture", "Cross Cutting Theme": "Gender", "Knowledge Providing Country": "Mexico", "Knowledge Receiving Country": "Brazil", "Fund Source" : "France", "Fund Opening Date": "3-3-2011", "Fund Closing Date": "6-3-2013","geometry": "01010000003753211E894453C00A849D62D5724340"},
+{"name": "Haiti", "style": null, "Sector Name": "Agriculture", "Cross Cutting Theme": "Gender", "Knowledge Providing Country": "Mexico", "Knowledge Receiving Country": "Brazil", "Fund Source" : "France", "Fund Opening Date": "3-3-2011", "Fund Closing Date": "6-3-2013","geometry": "0101000000000000A09BFC41C000000060129020C0"},
+{"name": "Ghana", "style": null, "Sector Name": "Agriculture", "Cross Cutting Theme": "Gender", "Knowledge Providing Country": "Mexico", "Knowledge Receiving Country": "Brazil", "Fund Source" : "France", "Fund Opening Date": "3-3-2011", "Fund Closing Date": "6-3-2013","geometry": "0101000000000000A01C725DC0000000C066C54040"},
+{"name": "Canada", "style": null, "Sector Name": "Agriculture", "Cross Cutting Theme": "Gender", "Knowledge Providing Country": "Mexico", "Knowledge Receiving Country": "Brazil", "Fund Source" : "France", "Fund Opening Date": "3-3-2011", "Fund Closing Date": "6-3-2013","geometry": "010100000000000000E01D55C0000000801F134140"},
+{"name": "Brazil", "style": null, "Sector Name": "Agriculture", "Cross Cutting Theme": "Gender", "Knowledge Providing Country": "Mexico", "Knowledge Receiving Country": "Brazil", "Fund Source" : "France", "Fund Opening Date": "3-3-2011", "Fund Closing Date": "6-3-2013","geometry": "0101000000000000E0340353C0000000E014754240"}], 
+"data_type": "Dataset"}}
+
