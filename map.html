@@ -8,17 +8,23 @@
     </script> 
 
 <script type="text/javascript" charset="utf-8">
-  projects_map = new F1.Maker.Map({map_id: "47944", dom_id: "projects_map",onload:function(){styleMap();}});
+  var map_loaded=false;
+  projects_map = new F1.Maker.Map({map_id: "47944", dom_id: "projects_map",onload:function(){
+	  if(map_loaded == false) {
+        styleMap();
+        map_loaded=true;
+      }
+	  }});
   function styleMap(){
 	  projects_map.addLayer({source: "url:http://localhost/wb_samples/external_json.json",styles: {type: "POINT", icon: {symbol:"http://farm5.static.flickr.com/4125/5219379732_e7251b5a47_o_d.png"}}});
 	  
   }
   
   function filterPoints(){
-	 projects_map.addFilter(1, "$[Country Name] == 'Brazil'");
+	  projects_map.addFilter(1, {expression: "$[Country Name] == 'Brazil'"});
   }
   function highlightPoints(){
-	  projects_map.addHighlight(1, "$[Country Name] =='Brazil'");
+	  projects_map.addHighlight(1, "$[Country Name] == 'Brazil'");
 	  
   }
   function removeFilters(){
